@@ -1,0 +1,21 @@
+@use "../utility/variables" as *;
+@use "../utility/mixins" as *;
+.nav {
+  background-color: yellowgreen;
+  &__container {
+    ul {
+      @include flex(space-between, center);
+    }
+  }
+}
+.container {
+  margin: 0 auto;
+}
+ul li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  
+}
+a {
+  text-decoration: none;
+}

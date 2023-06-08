@@ -1,0 +1,9 @@
+@use"../utility/mixins" as *;
+@use"../utility/variables" as *;
+.menu{
+    padding: 12em;
+    &__container{
+        background-color: red;
+    }
+
+}

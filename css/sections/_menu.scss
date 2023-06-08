@@ -1,0 +1,79 @@
+@use "../utility/mixins" as *;
+@use "../utility/variables" as *;
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../images/bet\ now.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.main {
+  padding: 4em;
+  &__container {
+    &__teams {
+      @include flex(flex-start, center);
+      gap: 1em;
+
+      > div {
+        background: green;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px;
+        width: 150px;
+        box-shadow: 0 2px 4px black;
+        cursor: pointer;
+
+        p {
+          @include flex(center, center);
+        }
+      }
+    }
+    &__row {
+      @include flex(space-between, center);
+      margin-top: 1em;
+      p {
+        color: white;
+      }
+    }
+    &__top {
+      @include flex(space-evenly, center);
+      gap: 10.5em;
+      // background-color: red;
+      padding: 0 4em;
+    }
+
+    @include flex(space-between, flex-start);
+    gap: 1em;
+
+    &__left {
+      width: 75%;
+    }
+    &__right {
+      width: 25%;
+      &__flex {
+        padding: 2em;
+        // background-color: red;
+        @include flex(space-between, center);
+        &__placeholder{
+          input{
+            padding: 2em;
+            width: 22em;
+            height: 0vh;
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-radius: 5px;
+
+          }
+        }
+        
+      }
+      
+    }
+    
+  }
+  .orange{
+    background-color: orangered;
+  }
+}
