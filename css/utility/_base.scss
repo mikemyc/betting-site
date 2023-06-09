@@ -16,3 +16,15 @@ a{
     text-decoration: none;
 }
 
+// For JS
+.odd{
+    color: green;
+    font-weight: bold;
+}
+
+.odd-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

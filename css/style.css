@@ -17,6 +17,17 @@ a {
   text-decoration: none;
 }
 
+.odd {
+  color: green;
+  font-weight: bold;
+}
+
+.odd-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav {
   background-color: yellowgreen;
 }
